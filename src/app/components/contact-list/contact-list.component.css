@@ -1,0 +1,16 @@
+.image{
+    width:600px;
+    margin-top:85px ;
+}
+#newtable{
+    margin-top: 100px;
+    
+}
+.page1{
+    width:100%;
+    height: 100%;
+    
+}
+.navbar{
+    background-color:linear-gradient(-225deg,#68cdfc 0%,#c5e928 100%);
+}

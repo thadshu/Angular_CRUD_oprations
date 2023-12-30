@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="image">
+                <img src="https://salestack.in/admin/api/uploads/Product//1660628686Qz8l94Ic.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <h5>Add Contact</h5>
+                <div class="row">
+                  <form [formGroup]="contactform">
+                   <div class="form-group mb-1">
+                    <label for="example">First Name</label>
+                    <input type="text" class="form-control" formControlName="firstname" placeholder="Enter First Name">
+                   </div>
+                   <div class="form-group mb-1">
+                    <label for="example">Last Name</label>
+                    <input type="text" class="form-control" formControlName="lastname" placeholder="Enter Last Name">
+                   </div>
+                   <div class="form-group mb-1">
+                    <label for="example">Phone number</label>
+                    <input type="number" class="form-control" formControlName="phonenumber" placeholder="Enter Phone number">
+                   </div>
+                   <div class="form-group mb-1">
+                    <label for="example">City</label>
+                    <input type="text" class="form-control" formControlName="city" placeholder="Enter city">
+                   </div>
+                   <div class="text-center mt-2">
+                    <button type="submit" (click)="submitcontact(this.contactform.value)"[disabled]="this.contactform.invalid" class="btn btn-primary">Submit</button>&nbsp;
+                    <button type="submit" routerLink="/contactlist" class="btn btn-success">Back</button>
+                  </div>
+                   
+                  </form>  
+                </div>
+            </div>
+        </div>
+   
